@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*created CSS variables for the commonly used properties*/
+:root {
+    --backgroundColor: #d9dcd6;
+    --logoFont: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --headerColor: #2a607c;
+    --textColor: #ffffff;
+    --textFont: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --leadGenColor: #2589bd;
+    --seoColor: #0072bb;
+    
+}
+
+/*Body and header Sections*/
+
+body {
+    background-color: var(--backgroundColor)
+}
+
+.header {
+    padding: 20px;
+    font-family: var(--logoFont);
+    background-color: var(--headerColor);
+    color: var(--textColor);
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header h1 .seo {
+    color: var(--backgroundColor);
+}
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: var(--textFont);
+    font-size: 20px;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: var(--textColor);
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+/*Hero Div*/
+
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/*Benefits Container*/
+
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: var(--textFont);
+    background-color: var(--leadGenColor);
+}
+
+.benefits .benefit { /*Combined all invididual subclasses within the <section class="benefits" container into class="benefit" because they all had the same properties and to clean up the code a little */
+    margin-bottom: 32px;
+    color: var(--textColor);
+    text-align: center;
+    margin-bottom: 10px;;
+
+}
+
+.benefits .benefit img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+
+}
+
+/*Main Content Container*/
+
+.content .contents { /*Combined all invididual subclasses within the <main class="content" container into class="contents" because they all had the same properties and to clean up the code a little */
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--seoColor);
+    color: var(--textColor);
+}
+
+
+
+.content .contents img { 
+    max-height: 200px;
+}
+
+.content .contents h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/*Footer Section*/
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: var(--logoFont);
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
+
